@@ -26,7 +26,7 @@ export default function Page() {
                 Biography
               </h2>
               <p className="font-medium text-dark/75 dark:text-white/75">
-                Hi, I'm Jhosaim, a fullstack web engineer and UI/UX designer
+                Hi, I&apos;m Jhosaim, a fullstack web engineer and UI/UX designer
                 with a passion for creating beautiful, functional, and
                 user-centered digital experiences.
               </p>
@@ -62,12 +62,12 @@ export default function Page() {
 
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
                 I believe that software design and development is about more
-                than just making things work and look pretty – it's about
+                than just making things work and look pretty – it&apos;s about
                 solving problems and creating intuitive, enjoyable experiences
                 for users.
               </p>
               <p className="font-medium text-dark/75 dark:text-white/75">
-                Whether I'm working on a website, mobile app, or other digital
+                Whether I&apos;m working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to

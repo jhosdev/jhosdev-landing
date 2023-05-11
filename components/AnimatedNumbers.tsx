@@ -22,7 +22,7 @@ export const AnimatedNumbers = ({ value }: { value: number }) => {
         ref.current.textContent = latest.toFixed(0);
       }
     });
-  }, []);
+  },);
 
   return <span ref={ref}></span>;
 };
