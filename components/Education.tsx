@@ -1,0 +1,67 @@
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
+import LiIcon from "./LiIcon";
+
+type DetailsProps = {
+  type: string;
+  time: string;
+  place: string;
+  info: string;
+};
+
+const Details = ({ type, time, place, info }: DetailsProps) => {
+  const ref = useRef(null);
+  return (
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+    >
+      <LiIcon reference={ref} />
+      <motion.div
+        initial={{ y: 0 }}
+        whileInView={{ y: 50 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
+        <h3 className="capitalize font-bold text-2xl mb-2">
+          {type}
+        </h3>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
+          {time} | {place}
+        </span>
+        <p className="font-medium w-full mt-2">{info}</p>
+      </motion.div>
+    </li>
+  );
+};
+
+const Education = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center start"],
+  });
+
+  return (
+    <div className="my-64">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center text-dark dark:text-light">
+        Education
+      </h2>
+      <div ref={ref} className="w-[75%] mx-auto relative">
+        <motion.div
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
+          style={{ scaleY: scrollYProgress }}
+        />
+        <ul className="w-full flex flex-col items-start justify-between ml-4 text-dark dark:text-light">
+          <Details
+          type="Software Engineer"
+          time="2021-2026"
+          place="Universidad Peruana de Ciencias Aplicadas (UPC)"
+          info="Strong foundation in various areas of computer science. In addition to core courses such as Data Structures and Algorithms and Computer Systems Engineering, I also studied topics like Web Development, Database Design, Computer Architecture, and Agile Development. These courses provided me with a comprehensive understanding of the software development process, from the initial design phase to testing and deployment. Additionally, I took courses in Software Architecture, which helped me 
+          gain a deeper understanding of the design and structure of software systems, and their potential applications in the field of software engineering."/>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Education;
