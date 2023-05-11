@@ -1,4 +1,13 @@
-type IconProps = {
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      set: any
+    }
+  }
+}
+
+interface IconProps {
   className?: string;
 };
 
