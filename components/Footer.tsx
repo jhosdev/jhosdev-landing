@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center">
                 Build with
                 <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>
-                by&nbsp;<Link href="https://github.com/jhosR" className="underline underline-offset-2">jhosDev</Link>
+                by&nbsp;<Link href="https://github.com/jhosdev" className="underline underline-offset-2">jhosDev</Link>
             </div>
             <Link href="https://www.linkedin.com/in/jhosdev/" target={"_blank"} className="underline underline-offset-2">Say hello</Link>
         </LayoutComponent>
