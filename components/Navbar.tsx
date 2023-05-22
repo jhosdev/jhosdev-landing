@@ -49,7 +49,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-center flex-wrap">
         <p className="bg-dark text-light dark:bg-light dark:text-dark px-3 mr-3 capitalize rounded-lg text-lg font-semibold">find me on:</p>
         
-        <motion.a href="https://github.com/jhosR" target="_blank" whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-9 mr-3">
+        <motion.a href="https://github.com/jhosdev" target="_blank" whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-9 mr-3">
           <GithubIcon/>
         </motion.a>
         <motion.a href="https://www.linkedin.com/in/jhosdev/" target="_blank" whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-9 mx-3">

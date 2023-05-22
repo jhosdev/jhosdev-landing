@@ -35,7 +35,7 @@ export default function Page() {
                       "It provides full CRUD implementations and has more features in its way, like: User login & authentication in the User Tab, API Tracking with comprehensive documentation in the Documentation Tab, Comments section for posts data, integration with a real API and Dark Mode & Animations in the Settings Tab.",
                     ]}
                     link="https://posts-app-3ef83.web.app/"
-                    github="https://github.com/jhosR/posts-app"
+                    github="https://github.com/jhosdev/posts-app"
                     type="Featured Project - In Development"
                   />
                 </div>
@@ -69,8 +69,8 @@ export default function Page() {
                   <Project
                     title="Cocktails API Application - Angular + Angular Material"
                     img={cocktailsapp}
-                    link="https://github.com/jhosR/cocktails-app"
-                    github="https://github.com/jhosR/cocktails-app"
+                    link="https://github.com/jhosdev/cocktails-app"
+                    github="https://github.com/jhosdev/cocktails-app"
                     type="Featured Project - Code Only"
                   />
                 </div>
@@ -78,8 +78,8 @@ export default function Page() {
                   <Project
                     title="Offers CRUD Application - Angular + Angular Material"
                     img={offersapp}
-                    link="https://github.com/jhosR/offers-app"
-                    github="https://github.com/jhosR/offers-app"
+                    link="https://github.com/jhosdev/offers-app"
+                    github="https://github.com/jhosdev/offers-app"
                     type="Featured Project - Code Only"
                   />
                 </div>
