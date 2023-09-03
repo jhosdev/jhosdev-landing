@@ -55,7 +55,7 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 text-dark dark:text-light">
           <Details
           type="Software Engineer"
-          time="2021-2026"
+          time="2021-2025"
           place="Universidad Peruana de Ciencias Aplicadas (UPC)"
           info="Strong foundation in various areas of computer science. In addition to core courses such as Data Structures and Algorithms and Computer Systems Engineering, I also studied topics like Web Development, Database Design, Computer Architecture, and Agile Development. These courses provided me with a comprehensive understanding of the software development process, from the initial design phase to testing and deployment. Additionally, I took courses in Software Architecture, which helped me 
           gain a deeper understanding of the design and structure of software systems, and their potential applications in the field of software engineering."/>

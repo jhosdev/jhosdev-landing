@@ -1,12 +1,12 @@
-import AnimatedText from "@components/AnimatedText";
-import LayoutComponent from "@components/LayoutComponent";
-import Image from "next/image";
-import profilePic from "@public/images/profile/profile.jpg";
-import Skills from "@components/Skills";
-import Experience from "@components/Experience";
-import Education from "@components/Education";
-import TransitionEffect from "@components/transitionEffect";
 import { AnimatedNumbers } from "@components/AnimatedNumbers";
+import AnimatedText from "@components/AnimatedText";
+import Education from "@components/Education";
+import Experience from "@components/Experience";
+import LayoutComponent from "@components/LayoutComponent";
+import Skills from "@components/Skills";
+import TransitionEffect from "@components/transitionEffect";
+import profilePic from "@public/images/profile/profile.jpg";
+import Image from "next/image";
 
 export const metadata = {
   title: "jhosdev - About",
@@ -26,38 +26,20 @@ export default function Page() {
                 Biography
               </h2>
               <p className="font-medium text-dark/75 dark:text-white/75">
-                Hi, I&apos;m Jhosaim, a fullstack web engineer and UI/UX designer
-                with a passion for creating beautiful, functional, and
-                user-centered digital experiences.
+                Hi, I&apos;m Jhosaim, a software developer with experience in roles as Fullstack Engineer and
+                Software Engineer.
               </p>
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-                With 1+ years of experience in the field. I possess extensive
+                With 2+ years of experience in the field. I possess extensive
                 experience in developing innovative web applications using a
                 range of technologies, libraries and frameworks.
               </p>
+              <p className="my-4 font-medium text-dark/75 dark:text-white/75">
+                My principal interests are fullstack development, software architecture, cloud computing and machine learning.
+              </p>
 
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-                My expertise lies in frontend development, where I am
-                well-versed in{" "}
-                <span className="text-primary dark:text-primaryDark font-semibold">
-                  JavaScript
-                </span>{" "}
-                frameworks such as{" "}
-                <span className="text-primary dark:text-primaryDark font-semibold">
-                  {" "}
-                  React.js, Angular, and Vue.js.{" "}
-                </span>{" "}
-                <br /> In addition, I have a strong command of backend
-                development, utilizing{" "}
-                <span className="text-primary dark:text-primaryDark font-semibold">
-                  {" "}
-                  C#, Java, PHP, and Python{" "}
-                </span>{" "}
-                , along with popular web development tools such as{" "}
-                <span className="text-primary dark:text-primaryDark font-semibold">
-                  {" "}
-                  Node.js, Express, Spring Boot, Laravel, and ASP.NET.
-                </span>
+              I'm currently pursuing a degree in Software Engineering at the Universidad Peruana de Ciencias Aplicadas (UPC) in Peru. I am deeply committed to continuous learning and staying updated with the latest advancements in web development. I am a self-motivated, hard-working and goal-oriented person who enjoys working in a team environment. 
               </p>
 
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
@@ -66,13 +48,7 @@ export default function Page() {
                 solving problems and creating intuitive, enjoyable experiences
                 for users.
               </p>
-              <p className="font-medium text-dark/75 dark:text-white/75">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p>
+              
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
@@ -103,7 +79,7 @@ export default function Page() {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold text-dark dark:text-white">
-                  <AnimatedNumbers value={1} />+
+                  <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-white/75">
                   Years of Experience
