@@ -31,7 +31,7 @@ export default function Page() {
               <h2 className="text-primary dark:text-primaryDark my-1 text-4xl font-extrabold">Software Engineer | Full-Stack Engineer</h2>
               <p className="my-4 text-base font-medium">As a skilled full-stack engineer, I am passionate about bringing creative ideas to life through innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development.<br/><br/> I am always eager to take on new challenges and contribute to exciting projects, so if you want to say hello or talk about something, feel free to contact me!</p>
               <div className="flex items-center self-start mt-2">
-                <Link href="/CV_Jhosaim_Pocohuanca_Aug2023_EN.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light" download={true}>Resume <LinkArrow className={"w-6 ml-1"}/> </Link>
+                <Link href="/Jhosaim_Resume_EN.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light" download={true}>Resume <LinkArrow className={"w-6 ml-1"}/> </Link>
                 <Link href="mailto:jhos.ricardo14@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">Contact</Link>
               </div>
             </div>
