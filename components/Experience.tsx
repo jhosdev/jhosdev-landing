@@ -52,6 +52,98 @@ const Details = ({
   );
 };
 
+const jobs = [
+ {
+  position: "Senior Software Engineer",
+  company: "Turing",
+  companyLink: "https://www.linkedin.com/company/turingcom/",
+  time: "09/2024 - 12/2024",
+  address: "Palo Alto, California, USA",
+  ach: [
+    "Designed and delivered high-quality serverless applications using AWS services, including Lambda, AppSync, S3, SQS, Cloudwatch and Amplify, ensuring robust infrastructure through SAM and CloudFormation. Built user-centric frontends with React and managed reliable data storage solutions with RDS and DynamoDB.",
+    "Orchestrated deployments using Kubernetes with custom environments for each pull request, enabling seamless testing and faster feature delivery.",
+    "Implemented comprehensive unit testing strategies in Python, achieving at least 90% test coverage to safeguard business logic and functionality during upgrades, including the migration of multiple repositories to Python 3.12.",
+    "Mentored developers to adopt best practices in coding and test writing, fostering a culture of quality and reliability.",
+    "Automated test workflows using Rust & Golang scripts, accelerating local execution and ensuring efficient validation of business logic across environments."
+  ]
+ },
+ {
+  position: "Semi-senior Software Developer",
+  company: "Laureate Education",
+  companyLink: "https://www.linkedin.com/company/laureate-education/",
+  time: "11/2023 - 09/2024",
+  address: "Lima, Peru",
+  ach: [
+    "Participated in the development team of the student portal backend microservices app at Universidad Peruana de Ciencias Aplicadas, using technologies such as FastAPI, Django, Python, AWS Serverless, and Directus. Then implemented caching using DynamoDB",
+    "Participated in the development team of the student portal frontend at Universidad Peruana de Ciencias Aplicadas, using technologies such as VueJS, Nuxt and Pinia.",
+    "Developed a high-performance backend application using Golang and the Echo framework, serving as an additional layer to transform data from third-party services, significantly improving data processing speed by 40%.",
+    "Managed applications using EC2, S3, RDS and Cloudwatch.",
+    "Implemented CI/CD pipelines using Azure Pipelines.",
+    "Conducted thorough testing, including unit tests and integration tests, to ensure high-quality deliverables."
+  ]
+ },
+ {
+  position: "Software Engineer, Contract",
+  company: "trades.org",
+  companyLink: "https://www.linkedin.com/company/trades-org/",
+  time: "07/2023 - 01/2024",
+  address: "Austin, Texas, USA",
+  ach: [
+    "Formed part of the design and development of multiple enterprise-level microservice applications of the company using AWS services like API Gateway, Amplify, Lambda and SQS with Typescript, Nestjs, GraphQL and Apollo Federation.",
+    "Designed and implemented multiple frontend and mobile applications using React, React Native, Astro and NextJS.",
+    "I was part of the development team to build an application using OpenAI API to build websites and developed custom agents to facilitate the website creation experience.",
+    "Developed a back office application to manage organizations settings and custom workflows using Nextjs with Django and Graphene, improving the development process by 20%",
+    "Developed utility tools and scripts using Golang to enhance project workflow, including: automatic folder structure generation for new microservices and frontend projects, CLI tools for db migrations and seeding, data processing and transformation utilities for large datasets.",
+    "Automated the backend testing process by integrating Jest and SuperTest to handle Integration and End-to-End tests.",
+    "Continuous Integration/Deployment Pipeline Integration, pull requests, code reviews, load/stress testing, unit/integration/e2e testing"
+  ]
+ },
+ {
+  position: "Software Developer, Contract",
+  company: "Paqtana",
+  companyLink: "https://www.linkedin.com/company/paqtana/",
+  time: "06/2023 - 08/2023",
+  address: "London, England, UK",
+  ach: [
+    "Designed and implemented functionalities in the company’s applications using React, Python, Flask, Django, SQLAlchemy, PostgreSQL and Google Cloud Platform. Implemented caching in the Django application improving performance by 30%.",
+    "Engineering owner of the E2E experience of the platform’s frontend ecosystem, improving the overall functionality and development cycle of the application using Playwright.",
+    "Updated and migrated the libraries and packages of both frontend and backend projects.",
+    "Continuous Integration/Deployment Pipeline Integration, pull requests, code reviews, load/stress testing, unit/integration/e2e testing"
+  ]
+ },
+ {
+  position: "Software Developer",
+  company: "Waytech Peru",
+  companyLink: "https://www.linkedin.com/company/way-tech/",
+  time: "05/2023 - 08/2023",
+  address: "Lima, Peru",
+  ach: [
+    "Led the migration, design and development of the company application using React, .NET, Express, DevExpress, AWS, DynamoDB and Maria DB, improving the previous ASP.NET system performance by 50%.",
+    "Designed and improved the core business operations, particularly in the area of production, by effectively managing production processes through the implementation of the reliable floor control system (SCP).",
+    "Conducted regular performance analysis and implemented optimizations to enhance application efficiency.",
+    "Continuous Integration/Deployment Pipeline Integration, pull requests, code reviews, load/stress testing, unit/integration/e2e testing"
+  ]
+ },
+ {
+  position: "Software Developer",
+  company: "Itali Peru",
+  companyLink: "https://www.facebook.com/institutoitali",
+  time: "01/2023 - 04/2023",
+  address: "Cusco, Peru",
+  ach: [
+    "Developed a comprehensive internal database application for a school company using the MERN stack (MongoDB, Express.js, React, Node.js) with a focus on Typescript. The application was created to efficiently manage student data, course schedules, and teacher information, among other essential functions.",
+    "Developed an ecommerce application using Next.js and Tailwind, providing a user-friendly platform for selling a diverse range of courses and offerings. The application served as a seamless marketplace, allowing customers to explore and access a wide array of company-provided products and services, all within a convenient and intuitive online environment.",
+    "Collaborated closely with the client to gain a deep understanding of their specific requirements and successfully delivered a functional and user-friendly interface that precisely catered to their needs.",
+    "Designed and developed the database architecture, ensuring that it was scalable, secure, and optimized for performance.",
+    "Developed the internal application front-end using React with TypeScript, leveraging PrimeReact and TailwindCSS libraries. Implemented essential features such as login and CRUD functionalities, cookie-based authentication, restricted routes with different access levels for admin, employees, and students, and ensured responsive design for seamless user experience",
+    "Developed a REST API using Node.js and Express.js with TypeScript to handle HTTP requests and responses on the server-side. Implemented middleware for various functionalities, including user authentication, data filtering, and real-time data updates using JWT (JSON Web Tokens) in combination with MongoDB and Express",
+    "Developed the ecommerce application using Next.js and Tailwind, integrating it with the Paypal API for the payments in the app",
+    "Conducted testing and debugging to identify and fix any issues and ensured that the application was fully functional and bug-free.",
+    "Provided ongoing maintenance and support for the application, ensuring that it remained up-to-date with the latest security patches and bug fixes."
+  ]
+ }
+]
+
 const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -70,66 +162,13 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 text-dark dark:text-light">
-          <Details
-            position="Software Developer"
-            company="Itali Peru"
-            companyLink="https://www.facebook.com/institutoitali"
-            time="May 2022-Present"
-            address="Cuz, PE"
-            work="Developed a comprehensive internal database application for a school company using the MERN stack (MongoDB, Express.js, React, Node.js) with a focus on Typescript. The application was created to efficiently manage student data, course schedules, and teacher information, among other essential functions. Developed an ecommerce application using Next.js and Tailwind, providing a user-friendly platform for selling a diverse range of courses and offerings. The application served as a seamless marketplace, allowing customers to explore and access a wide array of company-provided products and services, all within a convenient and intuitive online environment."
-            ach={[
-              "Collaborated closely with the client to gain a deep understanding of their specific requirements and successfully delivered a functional and user-friendly interface that precisely catered to their needs.",
-              "Designed and developed the database architecture, ensuring that it was scalable, secure, and optimized for performance.",
-              "Developed the internal application front-end using React with TypeScript, leveraging PrimeReact and TailwindCSS libraries. Implemented essential features such as login and CRUD functionalities, cookie-based authentication, restricted routes with different access levels for admin, employees, and students, and ensured responsive design for seamless user experience",
-              "Developed a REST API using Node.js and Express.js with TypeScript to handle HTTP requests and responses on the server-side. Implemented middleware for various functionalities, including user authentication, data filtering, and real-time data updates using JWT (JSON Web Tokens) in combination with MongoDB and Express",
-              "Developed the ecommerce application using Next.js and Tailwind, integrating it with the Paypal API for the payments in the app",
-              "Conducted testing and debugging to identify and fix any issues and ensured that the application was fully functional and bug-free.",
-              "Provided ongoing maintenance and support for the application, ensuring that it remained up-to-date with the latest security patches and bug fixes."
-              ]}
-          />
-          <Details
-            position="FullStack Developer"
-            company="Waytech Peru"
-            companyLink="https://www.linkedin.com/company/way-tech/"
-            time="May 2023- Aug 2023"
-            address="Lim, PE"
-            work="As a member of the development team at OBEN GROUP, I contributed to the creation of an internal inventory application. The project utilized diverse technologies, including React.js with DevExpress for the frontend and .NET Framework for the backend. I took part in development, code quality control and deployment, using AWS EC2 containers for the frontend and backend applications."
-            ach={[
-              "Upgraded existing systems previously implemented in ASP.NET to enhance functionality and performance. Implementation of a brand-new web platform using the latest technologies and leveraging the robust AWS cloud infrastructure",
-              "Played a pivotal role in supporting the core business operations, particularly in the area of production, by effectively managing production processes through the implementation of the reliable floor control system (SCP).",
-              "Established efficient connections with satellite systems such as ERP Oracle NetSuite (via APIs), CUBEIQ (via XML), OPTSTUDIO, and XTRIM to facilitate data exchange and integration.",
-              "Development of multiple services and microservices utilizing Node.js, Nest.js, and ASP.NET, with DynamoDB and Aurora MySQL serving as the primary databases",
-              "Employed the agile SCRUM framework to drive efficient and collaborative development practices"
-              ]}
-          />
-          <Details
-            position="Software Developer"
-            company="Tenmas / Paqtana"
-            companyLink="https://www.linkedin.com/company/paqtana/"
-            time="Jun 2023 - Aug 2023"
-            address="London, UK"
-            work="As a member of the Paqtana app development team, I played a significant role in its creation and ongoing maintenance. My contributions encompassed diverse tasks, including the implementation of new functionalities, unit tests, and end-to-end tests, all while employing CI/CD with pipelines to ensure a seamless development process. In this project, we opted for React.js as our frontend framework, paired with various styling libraries, to create an engaging user interface. For the backend, we leveraged Python with Flask, enabling robust data handling and smooth application functionality. For the end-to-end tests we used Playwright."
-            ach={[
-              "Fixed various bugs and implemented diverse core business functionalities, enhancing the overall user experience.",
-              "Integrated end-to-end tests successfully to the frontend ecosystem, improving the overall functionality and development cycle of the application.",
-              "Updated the libraries and packages of both the frontend and backend projects.",
-              "Employed the agile SCRUM framework to drive efficient and collaborative development practices."
-              ]}
-          />
-          <Details
-            position="Software Developer"
-            company="trades.org"
-            companyLink="https://www.linkedin.com/company/trades-org/"
-            time="July 2023 - Present"
-            address="Cuz, PE"
-            work="As a dedicated member of the trades.org team, I played a vital role in the backend infrastructure team, contributing my expertise in Nest.js, Typescript, Prisma, GraphQL, Apollo Federation, and AWS to develop diverse APIs and elevate the overall functionality of the business. I also worked on the frontend team, where I used React.js, and DaisyUI to create a user-friendly interface for the application."
-            ach={[
-              "Collaborated with the backend team to design and enhance new APIs utilizing Nest.js, Typescript, GraphQL, Prisma, and Apollo Federation. These APIs seamlessly integrated with a gateway powered by Apollo and were tested and documented using Postman.",
-              "Demonstrated problem-solving skills by identifying and resolving bugs and implementing various functionalities, significantly improving the application's overall performance and development cycle.",
-              "Actively participated in code reviews, offering valuable insights and suggestions to elevate the code quality and ensure adherence to best practices.",
-              "Embraced the agile SCRUM framework, promoting a collaborative and efficient development process, leading to successful project deliveries and heightened team productivity."
-              ]}
-          />
+          {jobs.map((job) => (
+            <Details
+              key={job.position}
+              work=""
+              {...job}
+            />
+          ))}
         </ul>
       </div>
     </div>

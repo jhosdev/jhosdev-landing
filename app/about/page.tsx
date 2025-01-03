@@ -26,27 +26,15 @@ export default function Page() {
                 Biography
               </h2>
               <p className="font-medium text-dark/75 dark:text-white/75">
-                Hi, I&apos;m Jhosaim, a software developer with experience in roles as Fullstack Engineer and
-                Software Engineer.
+                Hi, I&apos;m Jhosaim, passionate software engineer with a deep love for programming, particularly in the realms of backend development, software architecture, cloud computing, and artificial intelligence. 
               </p>
+              
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-                With 2+ years of experience in the field. I possess extensive
-                experience in developing innovative web applications using a
-                range of technologies, libraries and frameworks.
-              </p>
-              <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-                My principal interests are fullstack development, software architecture, cloud computing and machine learning.
+                My journey in software engineering has been driven by a insatiable curiosity and a strong desire to stay at the forefront of technological advancements. I find immense joy in solving complex problems and crafting efficient, scalable solutions that not only meet but exceed expectations.
               </p>
 
               <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-              I'm currently pursuing a degree in Software Engineering at the Universidad Peruana de Ciencias Aplicadas (UPC) in Peru. I am deeply committed to continuous learning and staying updated with the latest advancements in web development. I am a self-motivated, hard-working and goal-oriented person who enjoys working in a team environment. 
-              </p>
-
-              <p className="my-4 font-medium text-dark/75 dark:text-white/75">
-                I believe that software design and development is about more
-                than just making things work and look pretty – it&apos;s about
-                solving problems and creating intuitive, enjoyable experiences
-                for users.
+              I am constantly seeking opportunities to learn and grow, and I thrive in collaborative environments where I can contribute my expertise and learn from others. My goal is to leverage my technical skills and problem-solving abilities to build impactful software solutions that make a difference.
               </p>
               
             </div>

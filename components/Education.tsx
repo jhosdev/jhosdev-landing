@@ -57,8 +57,7 @@ const Education = () => {
           type="Software Engineer"
           time="2021-2025"
           place="Universidad Peruana de Ciencias Aplicadas (UPC)"
-          info="Strong foundation in various areas of computer science. In addition to core courses such as Data Structures and Algorithms and Computer Systems Engineering, I also studied topics like Web Development, Database Design, Computer Architecture, and Agile Development. These courses provided me with a comprehensive understanding of the software development process, from the initial design phase to testing and deployment. Additionally, I took courses in Software Architecture, which helped me 
-          gain a deeper understanding of the design and structure of software systems, and their potential applications in the field of software engineering."/>
+          info="I am currently pursuing a degree in Software Engineering at the Universidad Peruana de Ciencias Aplicadas (UPC) in Lima, Peru. My academic journey has equipped me with a strong foundation in various areas of computer science, including data structures, algorithms, software architecture, and agile development. I have gained hands-on experience through a variety of projects that have allowed me to apply theoretical knowledge to real-world problems. My coursework and projects have covered web development, database design, computer architecture, and software architecture, providing me with a comprehensive understanding of the software development lifecycle."/>
         </ul>
       </div>
     </div>
